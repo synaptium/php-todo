@@ -92,7 +92,6 @@ stage ('Deploy to Dev Environment') {
     build job: 'ansible-project-mgt/main', parameters: [[$class: 'StringParameterValue', name: 'env', value: 'dev']], propagate: false, wait: true
     }
        
-}
     
 }
 }
